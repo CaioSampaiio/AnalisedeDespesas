@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisedeDespesas.paginaCadastro"
+>
+    <StackLayout>
+
+        <Image x:Name="imggastos"
+                 Source="cloud.png"
+                 HeightRequest="200"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/> 
+        <Label 
+             Text="Cadastre-se"
+             TextColor="#4164E8"
+             FontSize="24"
+             Margin="0, 10, 0 ,0"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
+
+        <Label
+             Text="Nome"
+             TextColor="#4164E8"
+             VerticalOptions="Center" 
+             Margin="0, 10, 0 ,0"
+             WidthRequest="350"/>   
+        <Frame x:Name="UsernameFrame" HeightRequest="40"  WidthRequest="350" Padding="0" HorizontalOptions="FillAndExpand" BorderColor="#4164E8" HasShadow="True">
+            <Entry x:Name="UsernameEntry"
+             ClearButtonVisibility="WhileEditing"/>
+        </Frame>
+
+        <Label
+             Text="E-mail"
+             TextColor="#4164E8"
+             VerticalOptions="Center" 
+             Margin="0, 10, 0 ,0"
+             WidthRequest="350"/>
+        <Frame x:Name="EmailFrame" HeightRequest="40"  WidthRequest="350" Padding="0" HorizontalOptions="FillAndExpand" BorderColor="#4164E8" HasShadow="True">
+            <Entry x:Name="EmailEntry"
+             ClearButtonVisibility="WhileEditing"/>
+        </Frame>
+
+        <Label
+             Text="Senha"
+             TextColor="#4164E8"
+             VerticalOptions="Center" 
+             Margin="0, 10, 0 ,0"
+             WidthRequest="350"/>
+        <Frame x:Name="PasswordFrame" HeightRequest="40"  WidthRequest="350" Padding="0" HorizontalOptions="FillAndExpand" BorderColor="#4164E8" HasShadow="True">
+            <Entry x:Name="PasswordEntry"
+             ClearButtonVisibility="WhileEditing"/>
+        </Frame>
+        <Button Text="Cadastro"
+              Clicked="btnCad"
+              BackgroundColor="#4164E8"
+              FontSize="24"
+              TextColor="White"
+              Margin="0, 50, 0 ,0"
+              WidthRequest="350"/>   
+
+    </StackLayout>
+</ContentPage>

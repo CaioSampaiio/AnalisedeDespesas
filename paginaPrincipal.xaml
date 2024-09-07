@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisedeDespesas.paginaPrincipal"
+             Title="Adicionar Salario">
+    
+    <StackLayout Padding="5">
+        <Image x:Name="imgsalario"
+               Source="salario.png"
+               HeightRequest="200"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="0,100, 0 ,0"/>
+        <Label
+             Text="Salario Atual"
+             TextColor="#4164E8"
+             VerticalOptions="Center"
+             Margin="0,50, 0 ,0"
+             WidthRequest="350"/>
+        <Frame x:Name="UsernameFrame" HeightRequest="40"  WidthRequest="350" Padding="0" HorizontalOptions="FillAndExpand" BorderColor="#4164E8" HasShadow="True">
+            <Entry x:Name="UsernameEntry"
+             ClearButtonVisibility="WhileEditing"/>
+        </Frame>
+        <Button Text="Salvar"
+             Clicked="btnSalvar"
+             BackgroundColor="#4164E8"
+             FontSize="24"
+             TextColor="White"
+             Margin="0, 50, 0 ,0"
+             WidthRequest="350"/>
+    </StackLayout>
+</ContentPage>
